@@ -1,0 +1,23 @@
+{
+ "manifest_version": 2,
+ "name": "FilteredYouTube",
+ "version": "0.1.0",
+ "description": "Filter Youtube videos based on whitelisted channels.",
+ "short_name": "FilteredYouTube",
+ "background": {
+   "scripts": ["main.js"] 
+ },
+ "permissions": [
+		"storage",
+		"webRequest",
+    "webRequestBlocking", 
+		"<all_urls>"
+	],
+ "web_accessible_resources": ["allow.json"],
+ "icons": { "16": "static/duck-idle.png" },
+ "browser_action": {
+   "default_title": "Display the allowed YouTube channels.",
+   "default_popup": "popup.html",
+   "default_icon": "static/duck-idle.png"
+  }
+}
